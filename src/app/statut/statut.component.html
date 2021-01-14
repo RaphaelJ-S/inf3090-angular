@@ -1,0 +1,34 @@
+<label for="choixCommande">Entrez le numéro de la commande que vous désirez consulter.<br>
+		</label>
+<br>
+  <input type="text" id="choixCommande" autocomplete="off" [formControl]="pos">
+<br>
+<br>
+<button type="button" class="btn btn-outline-dark btn-md"(click)="chercher()">Chercher</button>
+<br>
+<br>
+
+<div id="reponse" *ngIf="afficherCommande">
+	<p>
+		Statut de la commande numéro {{pos.value}}
+	</p>
+	<ul>
+		<li>Prénom : {{commandeAff.prenom}}</li>
+		<li>Date de ramassage : {{commandeAff.ramassage}}</li>
+		<li>Statut : {{commandeAff.statut}}</li>
+		<li>Article(s) commandé(s) :</li>
+		<br>
+		<ul *ngFor="let item of affichage" >
+			<li *ngFor="let prop of item | keyvalue">{{prop.key}} : {{prop.value}} </li>
+			<hr>
+
+		</ul>
+	</ul>
+</div>
+
+
+<div id="invalide" *ngIf="afficherMsgErr">
+	<p >
+		Donnée invalide!
+	</p>
+</div>

@@ -1,0 +1,22 @@
+<div id="MenuPrincipal" class="dropdown">
+	<button class="dropdown-toggle" 
+	type="button" id="dropdownMenuButton" tabindex=0 data-toggle="dropdown"
+	aria-haspopup="true" aria-expanded="false">
+		<img src="../../assets/images/bars-solid.svg" alt="barres de menu"/>
+	</button>
+	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+		<h6 class="dropdown-header">Menu de navigation</h6>
+		<div class="dropdown-divider"></div>
+		<a class="dropdown-item" tabindex=0 id="link1" (click)="active('link1')" routerLink="/magasiner">Magasiner</a>
+		<a class="dropdown-item" tabindex=0 id="link2" (click)="active('link2')" routerLink="/commander">Commander</a>
+		<a class="dropdown-item" tabindex=0 id="link3" (click)="active('link3')" routerLink="/paiement">Paiement</a>
+		<a class="dropdown-item" tabindex=0 id="link4" (click)="active('link4')" routerLink="/statut">Statut</a>
+		<a class="dropdown-item" tabindex=0 id="link5" (click)="active('link5')" routerLink="/contact">Contact</a>
+		<a class="dropdown-item" tabindex=0 id="link6" (click)="active('link6')" routerLink="/gerant">Gérant</a>
+		<div class="dropdown-divider"></div>
+		<a class="dropdown-item" tabindex=0 href="https://quebec.ca/sante/problemes-de-sante/a-z/coronavirus-2019/" target="_blank">Covid19</a>
+	</div>
+	<a (click)="active('link1')" tabindex=0 routerLink="/">
+		<img src="assets/images/centos-brands.svg" alt="Plusieurs flèches partant d'un centre"/>
+	</a>
+</div>

@@ -1,0 +1,47 @@
+{
+	"articles":[
+		
+		{
+			"numero": 1,
+			"prenom": "Jacque",
+			"ramassage": "2020-07-13, 13h00",
+			"statut": "préparation",
+			"id":"A00002"
+		},
+		{
+			"numero": 2,
+			"prenom": "Charlotte",
+			"ramassage": "2020-05-02, 9h00",
+			"statut": "livré",
+			"id":"A00001"
+		},
+		{
+			"numero": 3,
+			"prenom": "Raoul",
+			"ramassage": "2020-12-25, 13h00",
+			"statut": "préparation",
+			"id":"A00002"
+		},
+		{
+			"numero": 1,
+			"prenom": "Jacque",
+			"ramassage": "2020-07-13, 13h00",
+			"statut": "préparation",
+			"id":"A00004"
+		},
+		{
+			"numero": 1,
+			"prenom": "Jacque",
+			"ramassage": "2020-07-13, 13h00",
+			"statut": "préparation",
+			"id":"A00005"
+		},
+		{
+			"numero": 3,
+			"prenom": "Raoul",
+			"ramassage": "2020-12-25, 13h00",
+			"statut": "préparation",
+			"id":"A00005"
+		}
+	]
+}

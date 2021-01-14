@@ -1,0 +1,16 @@
+.container {
+	width: 100%;
+	height: auto;
+	padding: 0px;
+}
+.contenu {
+	height: 100%;
+	
+	padding: 5% 5% 5% 5%;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-image: url(../assets/images/topography.svg) 2% stretch;
+	background-image: url(../assets/images/mandala-5381742_640.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}

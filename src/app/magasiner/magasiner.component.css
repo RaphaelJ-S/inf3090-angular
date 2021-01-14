@@ -1,0 +1,27 @@
+#affichage {
+	display: flex;
+	align-items:center;
+}
+#presItems {
+	
+}
+.images{
+	display: flex;
+	justify-content:center;
+}
+.col > img {
+	width: 50%;
+}
+ul {
+	list-style-type:none;
+}
+@media (max-width: 600px) {
+	.col > img {
+		width: 100%;
+
+	}	
+}
+h5 {
+	text-decoration: underline;
+	text-align: center;
+}

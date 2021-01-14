@@ -1,0 +1,17 @@
+
+.commander  {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#radioAchat {
+	max-width:300px;
+}
+
+#tableAchat {
+	max-width:300px;
+}
+input[type=radio]:focus {
+	background-color: lightblue;
+}

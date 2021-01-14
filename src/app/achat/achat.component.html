@@ -1,0 +1,58 @@
+<div class="commander">
+	<div id="radioAchat">
+		<form [formGroup]="form" class="form-check">
+			<fieldset>
+				<legend>Articles en vente : </legend>
+				<input type="radio" class="form-check-input" id="camera" formControlName="article" value="A00001">
+				<label class="form-check-label" for="camera">Camera - {{ articles[0].prix }}$</label><br>
+				<input type="radio" class="form-check-input" id="cable" formControlName="article" value="A00002">
+				<label class="form-check-label" for="cable">Cables - {{ articles[1].prix }}$</label><br>
+				<input type="radio" class="form-check-input" id="ipad" formControlName="article" value="A00003">
+				<label class="form-check-label" for="ipad">Ipad - {{ articles[2].prix }}$</label><br>
+				<input type="radio" class="form-check-input" id="telephone" formControlName="article" value="A00004">
+				<label class="form-check-label" for="telephone">Téléphone - {{ articles[3].prix }}$</label><br>
+				<input type="radio" class="form-check-input" id="ordinateur" formControlName="article" value="A00005">
+				<label class="form-check-label" for="ordinateur">Ordinateur - {{ articles[4].prix }}$</label><br>
+				<br>
+				<button type="button" class="btn btn-outline-dark btn-sm" (click)="ajoutArticle()">Ajouter au panier</button>
+				<span>  </span>
+				<button type="submit" class="btn btn-outline-dark btn-sm" (click)="confirme()">Confirmer l'achat</button>
+			</fieldset>
+		</form>
+		<div *ngIf="montre">
+		   <p>
+				Votre panier a été enregistré, votre numéro de commande est 4.
+				Déplacez vous vers la page 'paiement'.
+		   </p>
+		</div>
+	</div>
+	<div id="tableAchat" class="table-responsive">
+		<table class="table table-striped table-bordered" *ngIf="afficherTab">
+			
+			<thead>
+			
+							Votre commande: 
+
+				<tr>
+					<th>Identifiant</th>
+					<th>Article</th>
+					<th>Prix</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let arct of panier">
+					<td>{{arct.id}}</td>
+					<td>{{arct.nom}}</td>
+					<td>{{arct.prix}}</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="text-dark">Total du panier: {{total}}$</td>
+				</tr>
+			</tbody>
+			<button type="button" class="btn btn-outline-dark btn-sm" (click)="viderPanier()">Vider le panier</button>
+
+		</table>
+		
+	</div>
+			
+

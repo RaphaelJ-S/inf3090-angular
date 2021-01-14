@@ -1,0 +1,14 @@
+#pied {
+	display: flex;
+	justify-content: space-around;
+	background-image: url(../../assets/images/topography.svg);
+}
+#pied ul{
+	
+	list-style-type: none;
+}
+#pied a {
+	color: black;
+	font-weight: bold;
+	
+}

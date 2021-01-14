@@ -1,10 +1,59 @@
-# QIApp
+#README pour l'application qi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
+### Fonctionnement de l'application
 
-## Development server
+Ce projet a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Pour faire fonctionner l'application, il faut se placer dans le dossier de l'application
+et entrer `ng serve`. Cette commande initialise un serveur local au port spécifié dans
+angular.json (4211 par défaut).  Ensuite, il suffit simplement d'ouvrir son navigateur de choix et entrer
+`localhost:4211`. Bonne navigation!
+
+
+### Liens vers les dossiers et fichiers importants
+
+*  [qi](./) : 
+    Dossier racine de l'application.
+
+*  [node_modules](./node_modules) : 
+    Dossier des modules installés dans l'application.
+
+*  [angular.json](./angular.json) :
+    Fichier de configuration contenant, entre autre, le port et les importations
+    de modules.
+
+*  [app](./src/app) : 
+    Contient le component source de l'application et tous les autres components.
+
+*  [achat](./src/app/achat) :
+    Contient le component de d'achat d'articles.
+    
+*  [contact](./src/app/contact) :
+    Contient le component d'affichage des informations de contact.
+    
+*  [magasiner](./src/app/magasiner) :
+    Contient le component d'affichage des articles à vendre.
+    
+*  [menu](./src/app/menu) :
+    Contient le component du menu de navigation.
+    
+*  [pieddepage](./src/app/pieddepage) : 
+    Contient le component du pied de page.
+    
+*  [paiement](./src/app/paiement) : 
+    Contient le component d'affichage d'information relatif au paiement
+    d'une commande.
+    
+*  [statut](./src/app/statut) : 
+    Contient le component de recherche de statut d'une commande.
+    
+*  [images](./src/assets/images) :
+    Contient les images utilisées dans l'application.
+    
+*  [data](./src/assets/data) :
+    Contient les fichiers json utilisés dans l'application.
+    
+<!--Partie écrite par l'application lors de sa construction-->
 
 ## Code scaffolding
 

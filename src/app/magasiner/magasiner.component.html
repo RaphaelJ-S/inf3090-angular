@@ -1,0 +1,21 @@
+<h5>Articles disponibles</h5>
+<div *ngFor="let article of bd">
+
+	<div id="affichage" class="row" >
+		<div class="col images">
+			
+			<img [src]="article.image" alt="{{article.description}}" class="img-thumbnail"/>
+			
+		</div>
+		<div id="presItems" class="col">
+			<ul>
+				<li>id: {{article.id}}</li>
+				<li>nom: {{article.nom}}</li>
+				<li>marque: {{article.marque}}</li>
+				<li>prix: {{article.prix}}$</li>
+				<li>description: {{article.description}} </li>
+			</ul>
+		</div>
+	</div>
+	<hr>
+</div>
